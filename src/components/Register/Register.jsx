@@ -12,6 +12,8 @@ export default function Register({ onRegister }) {
     onRegister(email, password).catch(() => {
       console.error("credenciales invalidas");
     });
+    evt.target.elements.email.value = "";
+    evt.target.elements.password.value = "";
   };
 
   useEffect(() => {

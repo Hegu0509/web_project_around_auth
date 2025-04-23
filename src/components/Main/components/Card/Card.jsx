@@ -11,7 +11,7 @@ export default function Card({ card, onClick, onCardLike, onCardDelete }) {
     children: <ImagePopup card={card} />,
   };
 
-  const isLiked = card.likes.some((i) => i._id === currentUser._id);
+  const isLiked = card.likes.some((i) => i._id === currentUser?._id);
   const cardLikeButtonClassName = `place-grid__element-icon-like ${
     isLiked ? "place-grid__element-icon-like_active" : ""
   }`;

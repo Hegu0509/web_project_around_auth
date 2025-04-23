@@ -37,7 +37,7 @@ export default function Main(props) {
         <div className="profile__info">
           <div className="profile__avatar-container">
             <img
-              src={currentUser.avatar}
+              src={currentUser?.avatar}
               alt="Foto de Jacques Cousteau"
               className="profile__avatar"
             />
@@ -53,7 +53,7 @@ export default function Main(props) {
 
           <div className="profile__info-column">
             <div className="profile__info-row">
-              <p className="profile__info-name">{currentUser.name}</p>
+              <p className="profile__info-name">{currentUser?.name}</p>
               <button
                 className="profile__info-edit-button"
                 type="button"
@@ -63,7 +63,7 @@ export default function Main(props) {
               </button>
             </div>
 
-            <p className="profile__info-occupation">{currentUser.about}</p>
+            <p className="profile__info-occupation">{currentUser?.about}</p>
           </div>
         </div>
         <button
